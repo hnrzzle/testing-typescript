@@ -10,5 +10,5 @@ var Student = /** @class */ (function () {
 function greeter(person) {
     return "Hello, " + person.firstName + " " + person.lastName + "!";
 }
-var user = new Student('Henry', 'J.', 'Oliveira');
+var user = new Student(prompt('What is your First Name?'), prompt('Middle Initial?'), prompt('Last Name?'));
 document.body.innerHTML = "<h1> " + greeter(user) + " </h1>";

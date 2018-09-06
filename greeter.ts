@@ -18,7 +18,7 @@ function greeter(person: Person) {
   return `Hello, ${person.firstName} ${person.lastName}!`;
 }
 
-let user = new Student ('Henry', 'J.', 'Oliveira');
+let user = new Student (prompt('What is your First Name?'), prompt('Middle Initial?'), prompt('Last Name?'));
 
 
 document.body.innerHTML = `<h1> ${greeter(user)} </h1>`;
